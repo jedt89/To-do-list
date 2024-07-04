@@ -17,9 +17,9 @@ const addTask = (title) => {
   taskList.push(task);
 
   const row = `
-      <div id="task-${id}" class="task" style="outline: 1px solid ${'rgb(255,0,0,0.5)'};
+      <div id="task-${id}" class="task" style="overflow: hidden; outline: 1px solid ${'rgb(255,0,0,0.5)'};
          background: rgb(255,0,0,0.1)">
-        <div style="display: flex; gap: 10px; align-items: center;">
+        <div style="display: flex; gap: 10px; align-items: center; overflow-wrap: break-word;">
           <div style="font-weight: bold; font-style: italic;">${id}</div>
           <div class="title">${title}</div>
         </div>
