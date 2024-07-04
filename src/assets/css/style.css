@@ -44,6 +44,15 @@ small {
   font-style: italic;
 }
 
+.empty {
+  display: none;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: lightgray;
+  font-size: 20px;
+}
+
 .to-do-container {
   display: flex;
   flex-direction: column;
