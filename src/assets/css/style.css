@@ -1,0 +1,186 @@
+* {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: dodgerblue;
+  transition: all 0.3s linear;
+  background-size: cover;
+}
+
+section {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #9cceff;
+  border-radius: 6px;
+}
+
+input:focus-visible {
+  border: 1px solid #9cceff;
+  outline: none;
+}
+
+small {
+  font-style: italic;
+}
+
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid #9cceff;
+  border-radius: 6px;
+  padding: 1rem;
+  width: fit-content;
+  min-width: 100%;
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  border-radius: 6px;
+  width: 100%;
+  gap: 1rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 5px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-size: 11px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.check {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background-color: #b2dbff;
+  border-radius: 6px;
+
+  div {
+    display: grid;
+    place-items: center;
+    width: 70%;
+    height: 70%;
+
+    input {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  color: dodgerblue;
+  font-weight: bold;
+  background-color: rgba(40, 201, 55, 0.3);
+  cursor: pointer;
+  border: none;
+}
+
+.add-button:hover {
+  box-shadow: 0px 0px 5px 0px green;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 6px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0px 5px 5px;
+    font-size: 12px;
+  }
+
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  max-width: 150px;
+}
+
+@media screen and (width > 768px) {
+  .to-do-container {
+    min-width: 768px
+  }
+
+  .check {
+    width: 40px;
+    height: 40px;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+  
+  .task {
+    font-size: 10px;
+  }
+
+  .title {
+    max-width: auto;
+  }
+}
