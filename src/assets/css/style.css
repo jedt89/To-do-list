@@ -142,10 +142,6 @@ small {
   border: 1px solid rgba(30, 143, 255, 0.2);
 }
 
-.add-button:hover {
-  box-shadow: 0px 0px 5px 0px green;
-}
-
 .headers {
   display: flex;
   justify-content: space-between;
@@ -193,8 +189,8 @@ small {
   }
 
   .check {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .actions {
