@@ -19,9 +19,17 @@ const addTask = (title) => {
   const row = `
       <div id="task-${id}" class="task" style="overflow: hidden; outline: 1px solid ${'rgb(255,0,0,0.5)'};
          background: rgb(255,0,0,0.1)">
-        <div style="display: flex; gap: 10px; align-items: center; overflow-wrap: break-word;">
-          <div style="font-weight: bold; font-style: italic;">${id}</div>
-          <div class="title">${title}</div>
+        <div style="display: flex; gap: 1rem; align-items: center; overflow-wrap: break-word;">
+          <div>
+            <p style="font-style: italic; 
+              font-weight: bold;">ID</p>
+            <p>${id}</p>
+          </div>
+          <div class="title">
+            <p style="font-style: italic; 
+              font-weight: bold;">Nombre</p>
+            <p>${title}</p>
+          </div>
         </div>
         <div class="actions">
           <small id="small-${id}">${'Pendiente'}</small>
