@@ -5,6 +5,21 @@ const totalContainer = document.querySelector('.total');
 const pendingContainer = document.querySelector('.pending');
 const finishedContainer = document.querySelector('.finished');
 let taskList = [];
+let taskInit = [{
+  id: 5915,
+  title: 'Limpiar la casa',
+  finished: false
+},
+{
+  id: 7792,
+  title: 'Cocinar para hoy y mañana',
+  finished: false
+},
+{
+  id: 5858,
+  title: 'Sacar la basura de la cocina y baño',
+  finished: false
+}]
 
 const addTask = (title) => {
   if (!title || title.length == 0) return;
@@ -100,11 +115,18 @@ const calculateStats = () => {
     taskList.length == 0 ? 'grid' : 'none';
 };
 
+const init = () => {
+  taskInit.forEach(task => addTask(task.title))
+};
+
 // Listeners
 addButton.addEventListener('click', () => addTask(taskInput.value));
 taskInput.addEventListener('keydown', (event) => {
   const keycode = event.keyCode || event.which;
   if (keycode == 13) addTask(taskInput.value);
 });
-
 window.taskList = taskList;
+
+// Init
+init()
+
