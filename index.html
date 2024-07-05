@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./src/assets/css/style.css" />
-  <script src="https://kit.fontawesome.com/981278a700.js" crossorigin="anonymous"></script>
-  <title>Tareas pendientes</title>
-</head>
-<body>
-  <main class="home">
-    <section class="to-do-section">
-      <div class="to-do-container">
-        <h1>Lista de tareas</h1>
-        <div class="input-container">
-          <input class="task-input" type="text" placeholder="Agregar nueva tarea">
-          <button class="add-button">Agregar</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/981278a700.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tareas pendientes</title>
+  </head>
+  <body>
+    <main class="home">
+      <section class="to-do-section">
+        <div class="to-do-container">
+          <div class="global-title">
+            <h1>Lista de tareas</h1>
+          </div>
+          <label>Agregar nueva tarea</label>
+          <div class="input-container">
+            <input
+              class="task-input"
+              type="text"
+              placeholder="Ingresa una nueva tarea"
+            />
+            <button class="add-button">Agregar</button>
+          </div>
+          <div class="task-container">
+            <div class="empty">No hay tareas pendientes</div>
+          </div>
+          <div class="stats m-bottom10">
+            <div>
+              <i class="fas fa-list-ul"></i>
+              <div class="total">Total: 0</div>
+            </div>
+            <div>
+              <i class="fas fa-history" style="color: orange"></i>
+              <div class="pending">Pendientes: 0</div>
+            </div>
+            <div>
+              <i class="fas fa-check-circle" style="color: limegreen"></i>
+              <div class="finished">Finalizadas: 0</div>
+            </div>
+          </div>
         </div>
-        <div class="task-container">
-          <div class="empty">No hay tareas pendientes</div>
-        </div>
-        <div class="stats">
-          <div class="total">Total: 0</div>
-          <div class="pending">Pendientes: 0</div>
-          <div class="finished">Finalizadas: 0</div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-<script src="./src/assets/js/app.js"></script>
-
+      </section>
+    </main>
+  </body>
+  <script src="./src/assets/js/app.js"></script>
 </html>
