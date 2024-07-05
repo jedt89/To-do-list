@@ -103,6 +103,7 @@ label {
   padding: 15px 0px;
   background: aliceblue;
   margin-bottom: 20px;
+  border: 1px solid #9cceff;
 }
 
 .task {
@@ -114,7 +115,7 @@ label {
   border-radius: 6px;
   text-transform: capitalize;
   font-size: 11px;
-  width: 95%;
+  width: 90%;
 }
 
 .actions {
